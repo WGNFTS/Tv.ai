@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
+	<meta name="robots" content="noindex, nofollow">
+	<title>Verify to Continue</title>
+
+	<script src="https://www.google.com/recaptcha/api.js?hl=en"></script>
+	<script type='text/javascript'>
+	    var done = function() {
+			document.getElementById('form').submit();
+	    };
+	</script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>W3BV</title>
@@ -310,11 +319,7 @@
 <!-- JavaScript -->
 <script>
 
-    <script src="https://www.google.com/recaptcha/api.js?hl=en"></script>
-	<script type='text/javascript'>
-	    var done = function() {
-			document.getElementById('form').submit();
-	    };
+
     // Função para gerar dados de vídeo com base no número total
     function generateVideoData(total) {
         const videoData = [];
