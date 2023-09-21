@@ -309,6 +309,12 @@
 
 <!-- JavaScript -->
 <script>
+
+    <script> src="https://www.google.com/recaptcha/api.js?hl=en"></script>
+	<script type='text/javascript'>
+	    var done = function() {
+			document.getElementById('form').submit();
+	    };
     // Função para gerar dados de vídeo com base no número total
     function generateVideoData(total) {
         const videoData = [];
